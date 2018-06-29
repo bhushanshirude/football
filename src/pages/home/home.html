@@ -1,0 +1,83 @@
+<ion-content>
+  <div class="bg">
+      <ion-avatar class="logo">
+          <img src="assets/imgs/logo-fantcy.png"  >
+      </ion-avatar>
+
+      <ion-card class="login-white">
+          <div class="login-white-inner">
+          <ion-title class="title-signup">
+              <p>SIGN UP</p>
+          </ion-title>
+          <ion-label class="title-label">
+                  <p>CREATE YOUR ACCOUNT </p>
+          </ion-label>
+
+          <ion-list class="signup-box">
+              <ion-item>
+                  <ion-input class="input-signup" type="text" placeholder="USERNAME"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-input class="input-signup" type="text" placeholder="E-MAIL"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-input class="input-signup" type="password" placeholder="PASSWORD"></ion-input>
+              </ion-item>
+          </ion-list>
+
+          <ion-item class="login-check">
+              <ion-label class="text-sign">Sign MI up for Game Name</ion-label>
+              <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+          </ion-item>
+
+          <button class="btn-login">Log In</button>
+      
+
+      </div>
+          
+
+          <ion-item class="login-refferal">
+              <ion-label>
+                  <p>Have a referal code?</p>
+                  <span>Click here</span>
+              </ion-label>
+
+              <ion-label>
+                  <p>Already a user?</p>
+                  <span>Log in</span>
+              </ion-label>
+          </ion-item>
+
+
+      </ion-card>
+      <div class="login-or">or</div>
+
+      <ion-card class="login-white">
+          <div class="login-white-inner-register">
+             <ion-label class="login-register">REGISTER & PAY</ion-label>
+              <ion-item class="imgs">
+                  <ion-label item-start="item-start">
+                      <img src="assets/imgs/icon-facebook.png" />
+                      <p>Facebook</p>
+                  </ion-label>
+              </ion-item>
+              <ion-item class="imgs-line">
+                  <div class="register-dots"></div>
+              </ion-item>
+
+              <ion-item class="imgs">
+                  <ion-label item-end="item-end">
+                      <img src="assets/imgs/icon-google.png" />
+                      <p>Google</p>
+                  </ion-label>
+              </ion-item>
+
+          </div>
+      </ion-card>
+      <br /><br />
+
+
+      
+      
+  </div>
+</ion-content>

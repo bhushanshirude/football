@@ -1,0 +1,17 @@
+page-more {
+    .label-md {
+        margin: 13px 8px 13px 0;
+        font-size: 12PX;
+        cursor: pointer;
+    }
+
+    img {
+        max-width: 100%;
+        height: 20px;
+    }
+    .ion-ios-arrow-forward-outline:before {
+        color: #8d0327;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
