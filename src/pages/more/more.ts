@@ -9,6 +9,7 @@ import { LegalityPage } from '../legality/legality';
 import { HowToPlayPage } from '../how-to-play/how-to-play';
 import { WorkWithUsPage } from '../work-with-us/work-with-us';
 import { YourNotifaicationPage } from '../your-notifaication/your-notifaication';
+import { WelcomePage } from '../welcome/welcome';
 
 
 @IonicPage()
@@ -57,5 +58,9 @@ export class MorePage {
 
   YourNotifaication() {
     this.navCtrl.push(YourNotifaicationPage);
+  }
+
+  welcome(){
+    this.navCtrl.push(WelcomePage);
   }
 }

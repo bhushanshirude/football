@@ -37,7 +37,7 @@
   <ion-toolbar color="top">
     <ion-label text-center class="title"> MATCH CENTER</ion-label>
     <ion-segment color="white" mode="md" [(ngModel)]="pet">
-      <ion-segment-button value="FIXTURES">
+      <ion-segment-button value="FIXTURES" >
         FIXTURES
       </ion-segment-button>
       <ion-segment-button value="LIVE">
@@ -54,6 +54,7 @@
 <ion-content fullscreen #myContent>
   <div [ngSwitch]="pet">
     <ion-list *ngSwitchCase="'FIXTURES'">
+    <!-- <ion-list>  -->
       <ion-card *ngFor="let team of feature">
         <ion-grid>
           <ion-row>

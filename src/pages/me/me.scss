@@ -1,72 +1,143 @@
 page-me {
-      .headerCover{
-        background-size: cover;
-        background-position: cetner center;
-        background-repeat: no-repeat;
-        height:32%; 
-        margin: 0;
-        margin-left: -25px;
-        margin-right: -25px;
+    .headerCover{
+      background-size: cover;
+      background-position: cetner center;
+      background-repeat: no-repeat;
+      height: 40%; 
+      margin: 0;
+      margin-left: -25px;
+      margin-right: -25px;
+    }
+    .card-md h4{
+      margin: 2px 0;
+      font-weight: normal;
+      color: #222;
+      font-size: 11px;
+      color: #0e75df;
+      margin-top: 20px;
+  }
+   .card-md h5 {
+      margin: 2px 0;
+      font-weight: normal;
+      color: #777777;
+      font-size: 14px;
+  }
+       img {
+          display: block;
+          width: 40%;
+          height: 50%;
+          margin-top: 17px;
+          cursor: pointer;
       }
-      .card-md h4{
-        margin: 2px 0;
-        font-weight: normal;
-        color: #222;
-        font-size: 11px;
-        color: #0e75df;
-        margin-top: 20px;
-    }
-     .card-md h5 {
-        margin: 2px 0;
-        font-weight: normal;
-        color: #777777;
-        font-size: 14px;
-    }
-         img {
-            display: block;
-            width: 40%;
-            height: 50%;
-            margin-top: 17px;
-            cursor: pointer;
-        }
 
-        [col-7] {
-            -webkit-box-flex: 0;
-            -webkit-flex: 0 0 75%;
-            -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
-            font-size: 12px;
-            color: #777777;
-        }
-        .profile{
-            display: block;
-            width: 40%;
-            height: 50%;
-            margin-top: -20px;
-            cursor: pointer;
-        }
-        .but-imgs img {
-            height: 40%;
-            width: 10%;
-            margin-left: 20%;
-            margin-top: 0%;
-        }
-        .but-imgs {
-            border-radius:3%;
-            margin-top:-50px;
-            width: 90%;
-            margin-left: 5%;
-            background-color: #e6e6e6;
+      [col-7] {
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 75%;
+          -ms-flex: 0 0 75%;
+          flex: 0 0 75%;
+          font-size: 12px;
+          color: #777777;
+      }
+      .profile{
+          display: block;
+          width: 40%;
+          height: 50%;
+          margin-top: -20px;
+          cursor: pointer;
+      }
+      .but-imgs img {
+          height: 40%;
+          width: 8%;
+          margin-left: 20%;
+          margin-top: 0%;
+      }
+      .but-imgs {
+          border-radius:8px;
+          margin-top:-50px;
+          width: 90%;
+          margin-left: 5%;
+          background-color: #e6e6e6;
 
-        }
-        .but-imgs ion-label{
-            color: #777777;
-            font-size: 10px;
-        }
+      }
+      .but-imgs ion-label{
+          color: #777777;
+          font-size: 10px;
+      }
 
-        .button{
-            width:80%;
-            margin-left:10%;
-            margin-bottom: 5%;
-        }
+      .button{
+          width:80%;
+          margin-left:10%;
+          margin-bottom: 5%;
+      }
+
+.profile-img-wrap{
+  margin: 15px auto;
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  display: block;
+  float: none;
+}
+.profile-name-wrap{
+  margin: 0px 0px;
+  padding: 0px;
+  width: 100%;
+  position: relative;
+  display: block;
+  float: none;
+}
+.profile-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0px auto;
+}
+.profile-img img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.profile-img-wrap .profile-cam{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 14px;
+  right: -16px;
+  z-index: 20;
+  text-align: center;
+}
+.profile-img-wrap .profile-cam img{ 
+  width: 28px;
+  height: 21px;
+  margin: 15px auto;
+  border-radius: initial;
+  border: 0;
+}
+
+.profile-name {
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    color: #fff;
+    font-size: 12px;
+    margin-top: -10%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+ .profile-name img {
+    width: 10px;
+    margin: 20px 4px 15px 6px;
+    display: inline-block;
+    position: relative;
+    right: 0px;
+    top: 14px;
+}
+
 }

@@ -1,18 +1,120 @@
-<!--
-  Generated template for the HelpPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar color="top">
     <ion-title>Help</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list>
 
+    <ion-item>
+      DEPOSITS
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="DEPOSITS()" *ngIf="value !=='deposite'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='deposite'" (click)="desp()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='deposite'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      WITHDRAWALS
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="WITHDRAWALS()" *ngIf="value !=='withdraw'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='withdraw'" (click)="with()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='withdraw'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      POINTS
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="POINTS()" *ngIf="value !=='points'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='points'" (click)="poin()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='points'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      PLAYING THE GAME
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="PLAYING()" *ngIf="value !=='playing'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='playing'" (click)="play()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='playing'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      WINNINGS
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="WINNINGS()" *ngIf="value !=='winnings'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='winnings'" (click)="winn()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='winnings'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      VERIFICATION
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="VERIFICATION()" *ngIf="value !=='verification'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='verification'" (click)="veri()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='verification'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      REFDERRAL PROGRAM
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="REFDERRAL()" *ngIf="value !=='referral'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='referral'" (click)="refe()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='referral'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      PROFILE CHANGES
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="PROFILE()" *ngIf="value!=='profile'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='profile'" (click)="prof()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='profile'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      LOGIN & REGISTRATION
+      <ion-icon name="ios-arrow-down-outline" item-right (click)="LOGIN()" *ngIf="value!=='login'"></ion-icon>
+      <ion-icon name="ios-arrow-up-outline" item-right *ngIf="value=='login'" (click)="logi()"></ion-icon>
+    </ion-item>
+    <ion-card *ngIf="value=='login'">
+      <ion-card-content>
+        Republic of India Bhārat Gaṇarājya Horizontal tricolor flag bearing, from top to bottom, deep saffron, white, and green horizontal
+        bands.
+      </ion-card-content>
+    </ion-card>
+
+  </ion-list>
 </ion-content>
