@@ -1,83 +1,112 @@
-<ion-content>
-  <div class="bg">
-      <ion-avatar class="logo">
-          <img src="assets/imgs/logo-fantcy.png"  >
-      </ion-avatar>
-
-      <ion-card class="login-white">
-          <div class="login-white-inner">
-          <ion-title class="title-signup">
-              <p>SIGN UP</p>
+<ion-header>
+  <ion-navbar hideBackButton color="top">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-grid>
+      <ion-row>
+        <ion-col start>
+          <ion-title>
+            Cricket
+            <img class="down" src="assets/imgs/caret-down.png">
           </ion-title>
-          <ion-label class="title-label">
-                  <p>CREATE YOUR ACCOUNT </p>
-          </ion-label>
+        </ion-col>
+        <ion-col item-end>
+          <img src="assets/imgs/notification.png" class="notification">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
 
-          <ion-list class="signup-box">
-              <ion-item>
-                  <ion-input class="input-signup" type="text" placeholder="USERNAME"></ion-input>
-              </ion-item>
-              <ion-item>
-                  <ion-input class="input-signup" type="text" placeholder="E-MAIL"></ion-input>
-              </ion-item>
-              <ion-item>
-                  <ion-input class="input-signup" type="password" placeholder="PASSWORD"></ion-input>
-              </ion-item>
-          </ion-list>
-
-          <ion-item class="login-check">
-              <ion-label class="text-sign">Sign MI up for Game Name</ion-label>
-              <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
-          </ion-item>
-
-          <button class="btn-login">Log In</button>
-      
-
-      </div>
-          
-
-          <ion-item class="login-refferal">
-              <ion-label>
-                  <p>Have a referal code?</p>
-                  <span>Click here</span>
-              </ion-label>
-
-              <ion-label>
-                  <p>Already a user?</p>
-                  <span>Log in</span>
-              </ion-label>
-          </ion-item>
+  <shrinking-segment-header [scrollArea]="myContent" headerHeight="150">
+    <ion-slides autoplay="5000" loop="true" speed="3000" pager>
+      <ion-slide>
+        <img src="assets/imgs/banner1.png">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/banner1.png">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/banner1.png">
+      </ion-slide>
+    </ion-slides>
+  </shrinking-segment-header>
 
 
+  
+  <ion-toolbar color="top">
+    <ion-label text-center class="title"> MATCH CENTER</ion-label>
+    <ion-segment color="white" mode="md" [(ngModel)]="pet">
+      <ion-segment-button value="FIXTURES">
+        FIXTURES
+      </ion-segment-button>
+      <ion-segment-button value="LIVE">
+        LIVE
+      </ion-segment-button>
+      <ion-segment-button value="RESULTS">
+        RESULTS
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen #myContent>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'FIXTURES'">
+      <ion-card *ngFor="let team of feature">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-3 start>
+              <img src="{{team.team1}}">
+            </ion-col>
+            <ion-col col-6>
+              <ion-label text-center>{{team.Title}}</ion-label>
+              <ion-label text-center class="features">{{team.status}}</ion-label>
+            </ion-col>
+            <ion-col col-3>
+              <img class="delhi" src="{{team.team2}}">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-card>
-      <div class="login-or">or</div>
+    </ion-list>
 
-      <ion-card class="login-white">
-          <div class="login-white-inner-register">
-             <ion-label class="login-register">REGISTER & PAY</ion-label>
-              <ion-item class="imgs">
-                  <ion-label item-start="item-start">
-                      <img src="assets/imgs/icon-facebook.png" />
-                      <p>Facebook</p>
-                  </ion-label>
-              </ion-item>
-              <ion-item class="imgs-line">
-                  <div class="register-dots"></div>
-              </ion-item>
-
-              <ion-item class="imgs">
-                  <ion-label item-end="item-end">
-                      <img src="assets/imgs/icon-google.png" />
-                      <p>Google</p>
-                  </ion-label>
-              </ion-item>
-
-          </div>
+    <ion-list *ngSwitchCase="'LIVE'">
+      <ion-card *ngFor="let team of teams">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-3 start>
+              <img src="{{team.team1}}">
+            </ion-col>
+            <ion-col col-6>
+              <ion-label text-center>{{team.Title}}</ion-label>
+              <ion-label text-center class="progress">{{team.status}}</ion-label>
+            </ion-col>
+            <ion-col col-3>
+              <img class="delhi" src="{{team.team2}}">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
       </ion-card>
-      <br /><br />
-
-
-      
-      
+    </ion-list>
+    <ion-list *ngSwitchCase="'RESULTS'">
+      <ion-card *ngFor="let team of Result">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-3 start>
+              <img src="{{team.team1}}">
+            </ion-col>
+            <ion-col col-6>
+              <ion-label text-center>{{team.Title}}</ion-label>
+              <ion-label text-center class="results">{{team.status}}</ion-label>
+            </ion-col>
+            <ion-col col-3>
+              <img class="delhi" src="{{team.team2}}">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </ion-list>
   </div>
 </ion-content>

@@ -1,239 +1,87 @@
 page-home {
-    .item-md{
-        padding-left:0px;
+    .down{
+        max-width: 100%;
+        border: 0;
+        height: 11px;
+        margin-left: 10px;
+        cursor: pointer;
     }
-    .list-md .item-input:last-child{
-        border-bottom: 0px;
+    .notification{
+        max-width: 15%; 
+        border: 0;
+        margin-top: 2px;
+        margin-left: 75%;
+        cursor: pointer;
     }
-    .btn-login{
-        margin: 0px auto 40px auto;
-        padding: 0px;
-        width: 70%;
-        display: block;
-        height: 70px;
-        border: 0px;
-        background: #fd0346;
-        color: #fff;
-        font-size: 28px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0px;
-        box-shadow: 0px 4px 12px #ada8a8;
-        border-radius: 5px;
-    }
-    .bg {
-        width: 100%;
-        background-image: url('../assets/imgs/log-in-page-bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .logo{
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        text-align: center;
-    }
-    .logo img{
-        margin: 0px;
-        padding: 60px 0 30px 0;
-        max-width: 36%;
-        float: none;
-        display: inline-block;
-    }
-    .login-white{
-        margin: 0px auto;
-        padding: 0px 0px;
-        width: 90%;
-        border-radius: 14px;
-        background-color: #fff;
-        box-shadow: inherit;
-    }
-    .login-white-inner{
-        padding: 0px 40px;
-    }
-    .signup-box{
-        margin: 0px 0px;
-        padding: 0px 0px;
-        width: 100%;   
-    }    
+
+     .segment-button.segment-activated {
+       color: #fff;
+       height: 20px;
+   } 
+   .grid {
+       padding: 0px;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+       display: -webkit-box;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+       -webkit-flex-direction: column;
+       -ms-flex-direction: column;
+       flex-direction: column;
+   }  
+   .segment-button.segment-activated {
+       height: 34px !important;
     
-    .input-signup{
-        margin: 0px 0px 25px 0px;
-        padding: 8px 30px;
-        width: 100%;
-        background-color: #f7f7f7;
-        height: 64px;
-        color: #c5c5c5;
-        font-size: 18px;
-        border:0px;
-        border-radius: 14px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-    }
-    .logo-label a {
-        color: #fff;
-    }
-    .title-signup{
-        margin: 0px;
-        padding: 0px;     
-    }
-    .toolbar-title-md{ padding: 0px;}
-    .title-signup p{
-        color: #ff0000;
-        font-size: 25px;
-        padding: 20px 0px 0px 0px;
-        margin: 0px;
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 700;
-    }
-    .title-label{
-        margin: 0px 0px 20px 0px;
-        padding: 0px;    
-    }
-    .title-label p{
-        color: #c5c5c5;
-        font-size: 16px;
-        padding: 0px 0px 0px 0px;
-        margin: 0px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-    }
-    .login-check{
-        margin: 0px 0px 20px 0px;
-        padding: 0px;
-        width: 100%;
-    }
-    .login-check .checkbox-icon{
-        width: 43px;
-        height: 43px;
-        background-color: #f7f7f7;
-        border-radius: 10px;
-        border-color: #fff;
-    }
-    .login-check .checkbox-icon.checkbox-checked{
-        width: 43px;
-        height: 43px;
-        background-color: #f7f7f7;
-        border-radius: 10px;
-        border-color: #fff;
-    }
-    .login-check .checkbox-icon.checkbox-checked .checkbox-inner{
-        border-color: #9acf0c;
-        width: 22px;
-        height: 33px;
-        border-width: 5px;
-        border-top-width: 0;
-        border-left-width: 0;
-        left: 15px ;
-        top: -5px;
-    }
-    
-    .text-sign{
-        margin: 0px 0px 0px 0px;
-        padding: 0px;
-        font-size: 17px;
-        color: #c5c5c5;
-        text-transform: uppercase;
-    }
-    .login-refferal{
-        margin: 0px;
-        padding: 0px 30px 0px 30px;
-        width: 100%;
-        border-top:1px dotted #cacaca;
-    }    
-    .login-refferal p{
-        margin: 0px;
-        padding: 0px;
-        font-size: 19px;
-        color:#a9a9a9;
-        font-weight: 700;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-    }
-    .login-refferal span{
-        margin: 10px 10px 0px 0px;
-        padding: 0px;
-        font-size: 20px;
-        color:#fd0448;
-        font-weight: 700;
-        text-align: center;
-        display: block;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-    }
-    .login-or{
-        margin: 20px auto;
-        background-color: rgba(0,0,0,0.5);
-        width: 86px;
-        height: 86px;
-        line-height: 86px;
-        color: #fff;
-        font-size: 32px;
-        border-radius: 50%;
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 400;
-    }   
-    .login-white-inner-register{
-        padding: 0 20px 20px 20px;
-    } 
-    .login-register{
-        margin: 20px 0px 0px 0px;
-        color: #fd0347;
-        font-size: 28px;
-        font-weight: bold;
-        display: block; 
-        width: 100%;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .imgs {
-        height: 207px;
-        width:207px;
-        border-radius: 50%;
-        background-color: #f7f7f7;
-        color: #c5c5c5;
-        font-size: 28px;
-        text-align: center;
-        display: inline-block;
-    }
-    .imgs-line {
-        width:207px;
-        height: 207px;
-        color: #c5c5c5;
-        font-size: 28px;
-        text-align: center;
-        display: inline-block;
-    }
-    .register-dots{
-        border-left: 3px dotted #959595;
-        margin: 0px auto;
-        width: 3px;
-        height: 180px;
-    }
-    .imgs p{
-        margin: 0px;
-        padding: 0px;
-        display: block;
-        width: 100%;
-        color: #c5c5c5;
-        font-size: 26px;
-        text-align: center;
-        font-weight: 500;
-        display: block;
-        font-family: 'Oswald', sans-serif;
-    }
-    .imgs img{ 
-        max-width: 36%; 
-        display: inline-block; 
-        float: none;
-        margin-top: 40px;
    }
+   .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+       background-color: #65031c;
+   }
+   .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+        border-color:#65031c !important;
+   }
+
+   ion-card img {
+       display: block;
+       width: 100%;
+       height:50px; 
+       width:50px;
+   }
+
+   .delhi{
+       margin-left:10%;
+   } 
+   .list-md {
+       color: #777777;
+   }
+   .label-md {
+       margin: 4px 8px 13px 0;
+       font-size: 12px;
+      
+   }
+   .progress{
+       color:#ffb100;
+       cursor: pointer;
+   }
+   .results{
+       color:#2a9212;
+       cursor: pointer;
+   }
+   .features{
+       color:red;
+       cursor: pointer; 
+   }
+   .title{
+    margin: 7px 0px 0px 0px;
+    font-size: 12px;
+    color: #fff;
+   }
+   .swiper-pagination-bullet-active {
+    background: #61031b;
+    opacity: 1;
+}
 
 }

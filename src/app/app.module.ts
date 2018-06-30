@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { ShrinkingSegmentHeaderComponent } from '../components/shrinking-segment-header/shrinking-segment-header';
 import { AboutPage } from '../pages/about/about';
 import { AddCashPage } from '../pages/add-cash/add-cash';
 import { AppLogoPage } from '../pages/app-logo/app-logo';
@@ -53,7 +54,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WinningBreakupPage,
     WorkWithUsPage,
     TabsPage,
-    YourNotifaicationPage
+    YourNotifaicationPage,
+    ShrinkingSegmentHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -84,7 +86,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WinningBreakupPage,
     WorkWithUsPage,
     TabsPage,
-    YourNotifaicationPage
+    YourNotifaicationPage,
+    ShrinkingSegmentHeaderComponent
   ],
   providers: [
     StatusBar,
