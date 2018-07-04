@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the AppLogoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-app-logo',
@@ -22,4 +15,65 @@ export class AppLogoPage {
     console.log('ionViewDidLoad AppLogoPage');
   }
 
+  slides = [
+    {
+      image: "assets/imgs/kkr.png",
+      images: "assets/imgs/dd.png",
+      title:"ABC Vs CDE"
+
+    },
+    {
+      image: "assets/imgs/kkr.png",
+      images: "assets/imgs/dd.png",
+      title:"ABC Vs CDE"
+
+    },
+     {
+      image: "assets/imgs/dd.png",
+      images: "assets/imgs/kkr.png",
+      title:"ABC Vs CDE"
+
+    },
+     {
+      image: "assets/imgs/dd.png",
+      images: "assets/imgs/kkr.png",
+      title:"ABC Vs CDE"
+
+    },
+     {
+      image: "assets/imgs/kkr.png",
+      images: "assets/imgs/kkr.png",
+      title:"ABC Vs CDE"
+
+    },
+    {
+      image: "assets/imgs/dd.png",
+      images: "assets/imgs/dd.png",
+      title:"ABC Vs CDE"
+
+    },
+     {
+      image: "assets/imgs/kkr.png",
+      images: "assets/imgs/kkr.png",
+      title:"ABC Vs CDE"
+
+    },
+    {
+      image: "assets/imgs/dd.png",
+      images: "assets/imgs/dd.png",
+      title:"ABC Vs CDE"
+
+    },
+     {
+      image: "assets/imgs/kkr.png",
+      images: "assets/imgs/dd.png",
+      title:"ABC Vs CDE"
+
+    },
+     {
+      image: "assets/imgs/kkr.png",
+      images: "assets/imgs/kkr.png",
+      title:"ABC Vs CDE"
+
+    }]
 }

@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AboutPage } from '../about/about';
+import { AddCashPage } from '../add-cash/add-cash';
+import { AppLogoPage } from '../app-logo/app-logo';
+import { CreateTeamPage } from '../create-team/create-team';
 import { FantasyPointsPage } from '../fantasy-points/fantasy-points';
 import { HelpPage } from '../help/help';
 import { InviteFriendsPage } from '../invite-friends/invite-friends';
 import { InviteCodePage } from '../invite-code/invite-code';
 import { LegalityPage } from '../legality/legality';
 import { HowToPlayPage } from '../how-to-play/how-to-play';
+import { RejoinPage } from '../rejoin/rejoin';
+import { WinningBreakupPage } from '../winning-breakup/winning-breakup';
 import { WorkWithUsPage } from '../work-with-us/work-with-us';
-import { YourNotifaicationPage } from '../your-notifaication/your-notifaication';
-import { WelcomePage } from '../welcome/welcome';
+import { MyTeamPage } from '../my-team/my-team';
+
 
 
 @IonicPage()
@@ -56,11 +61,22 @@ export class MorePage {
     this.navCtrl.push(LegalityPage);
   }
 
-  YourNotifaication() {
-    this.navCtrl.push(YourNotifaicationPage);
+  add() {
+    this.navCtrl.push(AddCashPage);
   }
-
-  welcome(){
-    this.navCtrl.push(WelcomePage);
+  app() {
+    this.navCtrl.setRoot(AppLogoPage);
+  }
+  create() {
+    this.navCtrl.push(CreateTeamPage);
+  }
+  rejoin() {
+    this.navCtrl.push(RejoinPage);
+  }
+  winning() {
+    this.navCtrl.push(WinningBreakupPage);
+  }
+  my(){
+    this.navCtrl.push(MyTeamPage);
   }
 }

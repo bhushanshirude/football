@@ -1,3 +1,119 @@
 page-my-team {
+    .toolbar-title-md {
+        color: #fff;
+        font-size: 14px;
+    }  
+     .myview {
+        background-image: url('../assets/imgs/bgc.jpg');  
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+    .team-box-top{
+        margin: 0px;
+        padding: 0px 20px;
+        min-width: 100%;
+        display: block;
+    }
+    .team-box-top{
+
+        ion-col {
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0px;
+            font-size: 12px;
+            padding: 10px 0 10px 0;
+        }
+    }
+    .player{
+        width: 100%;
+    }
+    .allplayer{
+        width: 80%;
+    }
+    img {
+        width: 40%;
+        height: 65px;
+    }
+    .team-keeper{
+        font-size: 10px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0px 0px 10px 0px;
+        padding: 0px 0 0px 0;   
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .teams{
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0px 0px 25px 0px;
+        padding: 10px 0 0px 0;   
+        text-align: center;
+        font-weight: 400;
+    }
+    .team{
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 8px 0px 10px 0px;
+        padding: 0px 0 0px 0;   
+        text-align: center;
+        font-weight: 400;
+    }
+    .width{width: 100%; min-width: 100%;}
+    .player-boxes{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        min-width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .player-box{
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        width: 120px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    
+    }
+    .Batsman{
+        text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+    }
+    .All{
+        text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+    }
+    .blower {
+        text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+    }
+
+    .virat{
+        width: 16%;
+        height: 0%;
+    }
+
+    .team-img{
+        margin: 0px auto;
+        padding: 0px;
+        width: 106px;
+        height: 162px;
+        background-image: url(../assets/imgs/player-bg.png);
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
 
 }

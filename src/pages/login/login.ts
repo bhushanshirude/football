@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
+import { ForgotPasswordPage } from '../forgot-password/forgot-password';
+
 
 
 @IonicPage()
@@ -16,4 +19,10 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
+  login(){
+    this.navCtrl.setRoot(TabsPage);
+  }
+  forgot(){
+    this.navCtrl.push(ForgotPasswordPage)
+  }
 }

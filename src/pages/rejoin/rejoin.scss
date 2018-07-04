@@ -1,3 +1,126 @@
 page-rejoin {
+    .rejoin-box{
+        width: 100%;
+        margin: 30px auto;
+        padding: 20px;
+        border: 2px solid #e8e8e8;
+        box-shadow: 0px 0px 0px transparent;
+        border-radius: 8px;
+   }
+   .rejoin-box:hover{
+    border: 2px solid #b6e4c2;
+   }
+   .rejoin-box-top-left{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        float: left;
+        font-size: 10px;
+        color: #777777;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 80%;
+   }
+   .rejoin-box-top-left span{ font-size: 10px; color: #0dbc3d; }
+   .rejoin-box-top-right{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        float: right;
+        width: 20%;
+    }
+    .login-check{
+        margin: -20px 0px 0px 0px;
+        padding: 0px;
+        width: 100%;
+        position: relative;
+        left: 36px;
+    }
+    .login-check .checkbox-icon{
+        width: 15px;
+        height: 15px;
+        background-color: #a0a6af;
+        border-radius: 50%;
+        border-color: #fff;
+    }
+    .login-check .checkbox-icon.checkbox-checked{
+        width: 20px;
+        height: 20px;
+        background-color: #a0a6af;
+        border-radius: 50%;
+        border-color: #fff;
+    }
+    .login-check .checkbox-icon.checkbox-checked .checkbox-inner{
+        border-color: #9acf0c;
+        width: 20px;
+        height: 20px;
+        border-width: 5px;
+        border-top-width: 0;
+        border-left-width: 0;
+        left: 2px ;
+        top: -5px;
+    }
+
+    .rejoin-boxes{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+  
+    .rejoin-block{
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        width: 100%;
+        position: relative;
+    }
+    .rejoin-block-f{
+        margin: 0px;
+        padding: 20px 0;
+        width: 50%;
+        display: block;
+        float: left;
+        text-align: center;
+        border-right: 1px solid #ababab;
+        border-bottom: 1px solid #dadada;
+        position: relative;
+    }
+    .rejoin-block-s{
+        margin: 0px;
+        padding: 20px 0;
+        width: 50%;
+        display: block;
+        float: left;
+        text-align: center;
+        border-bottom: 1px solid #dadada;
+    }
+    .rejoin-block .title{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        font-size: 10px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #5e85db;
+    }
+    .rejoin-block p{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        font-size: 10px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #777777;
+    }
+    .dot{
+        margin: 0px;
+        padding: 0px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #9fa5ae;
+        position: absolute;
+        top: -1px;
+        right: -5px;
+    }
 
 }

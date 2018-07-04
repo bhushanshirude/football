@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the MyContestsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {YourNotifaicationPage} from '../your-notifaication/your-notifaication';
 
 @IonicPage()
 @Component({
@@ -243,4 +237,8 @@ export class MyContestsPage {
       status: "Complete"
     }
   ];
+
+  notifi(){
+    this.navCtrl.push(YourNotifaicationPage);
+  }
 }

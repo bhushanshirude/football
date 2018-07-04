@@ -1,18 +1,32 @@
-<!--
-  Generated template for the LoginPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>login</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
-</ion-content>
+<ion-content>
+        <div class="bg">
+            <ion-avatar class="logo">
+                <img src="assets/imgs/logo-fantcy.png">
+            </ion-avatar>
+    
+            <ion-card class="login-white">
+                <div class="login-white-inner">
+                    <ion-title class="title-signup">
+                        <p>SIGN UP</p>
+                    </ion-title>
+                    <ion-label class="title-label">
+                        <p>CREATE YOUR ACCOUNT </p>
+                    </ion-label>
+                    <ion-list class="signup-box">
+                        <ion-item>
+                            <ion-input class="input-signup" type="text" placeholder="USERNAME"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input class="input-signup" type="password" placeholder="PASSWORD"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                    <ion-item class="login-check">
+                        <ion-label class="text-sign">Sign MI up for Game Name</ion-label>
+                        <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+                    </ion-item>
+                    <button class="btn-login" (click)="login()">Log In</button>
+                </div>
+                <ion-label text-center class="forgot" (click)="forgot()">Forgot Password</ion-label>
+            </ion-card>
+        </div>
+    </ion-content>

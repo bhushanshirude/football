@@ -1,3 +1,35 @@
 page-app-logo {
-
+    
+    .toolbar-md-top .bar-button-clear-md, .toolbar-md-top .bar-button-default-md, .toolbar-md-top .bar-button-outline-md, .toolbar-md-top .toolbar-title-md {
+        color: #fff;
+        font-size: 14px;
+    }
+ .label-md {
+        margin: 7px 8px 13px 7%;
+        font-size: 14px;
+        color:#817f7f;  
+    }
+    .grid {
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        
+    }
+    img {
+    
+        height: 28%;
+       
+    }
+    .cricket{
+        margin: 0px 8px 0px 0px; 
+    }
+    .football{
+        margin-left:40%;
+    }
+    
+    
 }

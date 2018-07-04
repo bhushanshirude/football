@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the SingUpPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { TabsPage } from '../tabs/tabs';
 
 @IonicPage()
 @Component({
@@ -20,6 +14,9 @@ export class SingUpPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SingUpPage');
+  }
+  login(){
+    this.navCtrl.setRoot(TabsPage);
   }
 
 }

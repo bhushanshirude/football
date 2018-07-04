@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {YourNotifaicationPage} from '../your-notifaication/your-notifaication';
 
 @Component({
   selector: 'page-home',
@@ -84,6 +85,7 @@ export class HomePage {
       status: "10h 55m 45s "
     }
   ];
+
   teams = [
     {
       Title: "KKR Vs DD",
@@ -158,6 +160,7 @@ export class HomePage {
       status: "IN Progress"
     }
   ];
+  
   Result = [
     {
       Title: "KKR Vs DD",
@@ -232,4 +235,8 @@ export class HomePage {
       status: "Complete"
     }
   ];
+
+  notifi(){
+    this.navCtrl.push(YourNotifaicationPage);
+  }
 }
